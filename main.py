@@ -8,8 +8,7 @@ import flask
 
 # The root logger is created with level WARNING
 # To see less severe messages we have to set the level
-root_logger = logging.getLogger()
-root_logger.setLevel(logging.DEBUG)
+logging.getLogger().setLevel(logging.DEBUG)
 
 def echo(request):
     """Dump various dictionaries to the response."""
