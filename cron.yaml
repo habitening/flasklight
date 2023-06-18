@@ -1,0 +1,5 @@
+# schedule is in UTC unless timezone is specified
+cron:
+- description: "Make an HTTP GET request to url."
+  url: /
+  schedule: every day 17:00
